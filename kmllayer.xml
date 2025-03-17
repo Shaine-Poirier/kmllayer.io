@@ -30,9 +30,21 @@
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
 	</Style>
+	    <!-- Style for the polygon -->
+    <Style id="polygonStyle">
+        <!-- Red border -->
+        <LineStyle>
+            <color>ff0000ff</color>
+            <width>4</width>
+        </LineStyle>
+        <!-- Red fill -->
+        <PolyStyle>
+            <color>ff0000ff</color>
+        </PolyStyle>
+    </Style>
 	<Placemark>
 		<name>FirstLetter</name>
-		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<styleUrl>#polygonStyle</styleUrl>
 		<Polygon>
 			<tessellate>1</tessellate>
 			<outerBoundaryIs>
